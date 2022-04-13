@@ -8,7 +8,6 @@ export default defineComponent({
 
 <template>
   <div>asdasd</div>
-  <router-view />
 </template>
 
 <style lang="scss" scoped></style>

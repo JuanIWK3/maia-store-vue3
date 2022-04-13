@@ -28,7 +28,6 @@ export default defineComponent({
       </router-link>
     </div>
   </div>
-  <router-view />
 </template>
 
 <style scoped lang="scss">

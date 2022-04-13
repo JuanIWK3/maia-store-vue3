@@ -29,7 +29,6 @@ export default defineComponent({
       </div>
     </div>
   </div>
-  <router-view />
 </template>
 
 <style scoped lang="scss">
