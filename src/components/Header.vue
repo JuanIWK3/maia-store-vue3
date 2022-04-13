@@ -8,11 +8,10 @@ export default defineComponent({
 
 <template>
   <div class="container-header">
-    <img class="logotipo" src="../assets/logos/logotipo.jpg" alt="" />
+    <router-link to="/">
+      <img class="logotipo" src="../assets/logos/logotipo.jpg" alt="" />
+    </router-link>
     <div class="buttons">
-      <router-link to="/">
-        <button :class="$route.name == 'home' && 'selected'">Home</button>
-      </router-link>
       <router-link to="/products">
         <button :class="$route.name == 'products' && 'selected'">
           Produtos
