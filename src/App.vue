@@ -5,7 +5,6 @@ import Header from "./components/Header.vue";
 
 <template>
   <Header />
-  <Home />
 </template>
 
 <style>
@@ -15,6 +14,7 @@ import Header from "./components/Header.vue";
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }

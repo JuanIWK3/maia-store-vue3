@@ -7,19 +7,28 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-header">
     <img class="logotipo" src="../assets/logos/logotipo.jpg" alt="" />
     <div class="buttons">
-      <button class="selected">Home</button>
-      <button>Produtos</button>
-      <button>Galeria</button>
-      <button>Cadastro</button>
+      <router-link to="/">
+        <button class="selected">Home</button>
+      </router-link>
+      <router-link to="/products">
+        <button>Produtos</button>
+      </router-link>
+      <router-link to="/galery">
+        <button>Galeria</button>
+      </router-link>
+      <router-link to="/register">
+        <button>Cadastro</button>
+      </router-link>
     </div>
   </div>
+  <router-view />
 </template>
 
 <style scoped lang="scss">
-.container {
+.container-header {
   display: flex;
   align-items: center;
   margin: 0 16px;
