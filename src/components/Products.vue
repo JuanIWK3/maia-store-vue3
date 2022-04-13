@@ -6,9 +6,10 @@ import { Camisa } from "../interfaces";
 export default defineComponent({
   name: "index",
   data() {
+    const camisas: Camisa[] = camisasImg;
+
     return {
-      camisas: camisasImg as Camisa[],
-      text: "fodase",
+      camisas,
     };
   },
 });
@@ -19,8 +20,12 @@ export default defineComponent({
     <div class="category">Camisas</div>
     <div class="products">
       <div class="product" v-for="(camisa, index) in camisas" :key="index">
-        <img :src="camisas[index].image" alt="" />
-        <div class="name">{{ camisas[index].name }}</div>
+        <router-link :to="`/product/camisas/${index}`">
+          <div>
+            <img :src="camisas[index].image" alt="" />
+            <p class="name">{{ camisas[index].name }}</p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -51,6 +56,12 @@ export default defineComponent({
       img {
         width: 100%;
         height: 100%;
+      }
+
+      .name {
+        margin: 0;
+        text-decoration: none;
+        color: #000;
       }
     }
   }

@@ -13,6 +13,11 @@ import Header from "./components/Header.vue";
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 body {
   min-height: 100vh;
   margin: 0;

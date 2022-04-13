@@ -1,17 +1,13 @@
-yar
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "index",
+  name: "product-page",
 });
 </script>
 
 <template>
-  <div class="container">asd</div>
+  <div>asdasd</div>
 </template>
 
-<style scoped lang="scss">
-.container {
-}
-</style>
+<style lang="scss" scoped></style>

@@ -10,7 +10,7 @@ import camisaSlo from './camisas/slo.jpg';
 
 
 export const camisasImg: Camisa[] = [
-  { name: 'Atlético', image: camisaAth },
+  { name: 'Athletico', image: camisaAth },
   { name: 'Cruzeiro', image: camisaCru },
   { name: 'Fortaleza', image: camisaFor },
   { name: 'Mon', image: camisaMon },
