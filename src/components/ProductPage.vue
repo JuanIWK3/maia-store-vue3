@@ -20,6 +20,7 @@ export default defineComponent({
     <img :src="camisa.image" alt="" />
     <p>{{ camisa.name }}</p>
   </div>
+  <router-view />
 </template>
 
 <style></style>
